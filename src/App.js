@@ -4,9 +4,16 @@ import ProductCard from "./components/ProductCard/ProductCard";
 
 function App() {
   return (
-    <div>
+    <div className="app">
+
       <Header />
-      <ProductCard />
+
+      <div className='conteúdo'>
+        <main className='container'>
+          <ProductCard />
+        </main>
+      </div>
+      
     </div>
   );
 }
