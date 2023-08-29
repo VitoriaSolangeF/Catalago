@@ -1,11 +1,11 @@
-header {
+.hearder {
     background-color: #000000;
     position: fixed;
     width: 100%;
     z-index: 1;
 }
 
-header > div {
+.hearder  .container_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;

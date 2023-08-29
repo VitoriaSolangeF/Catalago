@@ -7,12 +7,11 @@ import CartButton from "../CartButton/CartButton";
 function Header() {
     return (
         <header className="hearder">
-        <div className="container">
-            <img src="logo.png" alt="logo__kimaster" />
-            
-            <SearchBar />
-            <CartButton />
-        </div>
+            <div className="container_menu">
+                <img src="logo.png" alt="logo__kimaster" />
+                <SearchBar />
+                <CartButton />
+            </div>
         </header>
     );
 }

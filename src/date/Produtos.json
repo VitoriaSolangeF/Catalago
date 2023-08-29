@@ -1,0 +1,64 @@
+[
+    {
+        "urlImage": "https://http2.mlstatic.com/D_NQ_NP_879207-MLB54008450003_022023-O.webp",
+        "id": "507f1f77bcf86cd799439011",
+        "reference": "ABC123",
+        "value": 100.5,
+        "stock": 10,
+        "description": "CAPA IPhone 11"
+    },
+    
+    {
+        "urlImage": "https://i.zst.com.br/thumbs/12/23/34/-520026902.jpg",
+        "id": "507f191e810c19729de860ea",
+        "reference": "XYZ456",
+        "value": 200.0,
+        "stock": 5,
+        "description": "Caixa de som kimaster"
+    },
+
+    {
+        "urlImage": "https://cdn.awsli.com.br/600x1000/1417/1417526/produto/180925767/8b2dabcaaf.jpg",
+        "id": "507f1f77bcf86cd799439022",
+        "reference": "LMN789",
+        "value": 150.75,
+        "stock": 8,
+        "description": "pelicula 3D"
+    },
+
+    {
+        "urlImage": "https://cdn.awsli.com.br/600x1000/1417/1417526/produto/180925767/8b2dabcaaf.jpg",
+        "id": "507f1f77bcf86cd799439022",
+        "reference": "LMN789",
+        "value": 150.75,
+        "stock": 8,
+        "description": "teste"
+    },
+
+    {
+        "urlImage": "https://cdn.awsli.com.br/600x1000/1417/1417526/produto/180925767/8b2dabcaaf.jpg",
+        "id": "507f1f77bcf86cd799439022",
+        "reference": "LMN789",
+        "value": 150.75,
+        "stock": 8,
+        "description": "teste2"
+    },
+
+    {
+        "urlImage": "https://cdn.awsli.com.br/600x1000/1417/1417526/produto/180925767/8b2dabcaaf.jpg",
+        "id": "507f1f77bcf86cd799439022",
+        "reference": "LMN789",
+        "value": 150.75,
+        "stock": 8,
+        "description": "teste3"
+    },
+    
+    {
+        "urlImage": "https://cdn.awsli.com.br/600x1000/1417/1417526/produto/180925767/8b2dabcaaf.jpg",
+        "id": "507f1f77bcf86cd799439022",
+        "reference": "LMN789",
+        "value": 150.75,
+        "stock": 8,
+        "description": "teste3"
+    }
+]
