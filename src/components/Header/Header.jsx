@@ -8,6 +8,7 @@ function Header() {
     return (
         <header className="hearder">
             <div className="container_menu">
+                <img src="logo.png" alt="logo__kimaster" />
                 <SearchBar />
                 <CartButton />
             </div>

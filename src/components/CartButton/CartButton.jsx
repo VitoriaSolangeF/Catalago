@@ -5,8 +5,8 @@ import './CartButton.css';
 
 function CartButton() {
     return (
-        <button className="button_whatapp" type="button">
-            <MdOutlineWhatsapp className="cart__button"/>
+        <button type="button" className="cart__button">
+            < MdOutlineWhatsapp />
             <span className="cart-status"></span>
         </button>
     );

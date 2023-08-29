@@ -1,15 +1,16 @@
 import React from "react";
+
 import Header from "./components/Header/Header";
 import ProductCard from "./components/ProductCard/ProductCard";
 
-
 function App() {
   return (
-      <div className='conteúdo'>
+    <div className='app'>
         <Header/>
-          <main className='container'>
-            <ProductCard />
-          </main>
+        
+          <div className="card-container">
+            <ProductCard/>
+          </div>
       </div>
   );
 }

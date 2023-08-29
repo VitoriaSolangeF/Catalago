@@ -10,6 +10,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #e7e7e7;
+}
+
 .conteúdo {
   display: flex;
   justify-content: center; 
@@ -18,15 +22,8 @@
   box-sizing: border-box; 
 }
 
-.container {
+.card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
-  align-items: center;
-  padding-top: 5em;
+  padding: 10em;
 }
 
-.container_menu{
-  max-width: 1100px;
-  margin: 0 auto;
-}

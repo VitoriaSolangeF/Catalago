@@ -3,5 +3,9 @@
     background: #0c3767;
     margin-bottom: 76px;
     z-index: 999;
-    height: 100vh;
 }
+
+.container_menu {
+    max-width: 1100px;
+    margin: 0 auto;
+  }

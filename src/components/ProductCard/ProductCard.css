@@ -1,11 +1,11 @@
 .product-card {
-    width: 50%;
     background-color: white;
     cursor: pointer;
 }
 
 .card__image {
-    width: 100px;
+    width: 580px;
+    height: 430px;
 }
 
 .card__infos {
@@ -25,6 +25,13 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     font-weight: 500px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    align-items: center;
 }
 
 
