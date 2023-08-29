@@ -1,13 +1,13 @@
 import React from "react";
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { MdOutlineWhatsapp } from 'react-icons/md';
 
 import './CartButton.css';
 
 function CartButton() {
     return (
         <button type="button" className="cart__button">
-            <AiOutlineShoppingCart />
-            <span className="cart-status">1</span>
+            < MdOutlineWhatsapp />
+            <span className="cart-status"></span>
         </button>
     );
 }
