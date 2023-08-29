@@ -1,7 +1,8 @@
 header {
-    background-color: #063b77;
+    background-color: #000000;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 header > div {
@@ -9,4 +10,9 @@ header > div {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: 100px;
 }
