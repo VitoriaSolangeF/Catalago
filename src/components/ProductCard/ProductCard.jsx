@@ -1,24 +1,33 @@
 import React from "react";
 
 import { BsCartPlusFill } from 'react-icons/bs'
+import { LoadProdutos } from "../../utils/loadProdutos";
 
 import './ProductCard.css'
 
 function ProductCard() {
+
+    const produtos = LoadProdutos();
+
     return (
 
-        <section className="product-card">
-           
-            <img src="Fone.png" alt="product" className="card__image" />
+        <>
+            {produtos.map(produto => (
 
-            <div className="card__infos">
-                <h2 className="card__price">R$ 75,00</h2>
-                <h2 className="card__title">Fone Kimaster</h2>
-            </div>
-            <button type="button" className="button__add-cart">
-                <BsCartPlusFill />
-            </button>
-        </section>
+                <section key={produto.id} className="product-card">
+                    <img src={produto.urlImage} alt={produto.description} className="card__image"/>
+
+                    <div className="card__infos">
+                        <h2 className="card__price">Descrição: {produto.description}</h2>
+                        <p>Valor: R${produto.value}</p>
+                        <p>Valor: Estoque:{produto.stock}</p>
+                        <p>Valor: Referencia{produto.reference}</p>
+                        <p>Valor: ID{produto.id}</p>
+                    </div>
+                </section>
+
+            ))}
+        </>
         
     );
 }
