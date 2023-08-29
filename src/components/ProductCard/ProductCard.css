@@ -1,0 +1,39 @@
+.product-card {
+    width: 100%;
+    max-width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card__image {
+    max-width: 200%;
+}
+
+.card__infos {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.card__price {
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 500px;
+}
+
+.button__add-cart {
+    position: absolute;
+    left: 0;
+}
