@@ -10,19 +10,18 @@ function ProductCard() {
     return (
         <>
             {produtos.map(produto => (
-
-                <section key={produto.id} className="product-card">
-                
-                    <img src={produto.urlImage} alt={produto.description} className="card__image" />
-
-                    <div className="card__infos">
-                        <h2>Descrição: {produto.description}</h2>
-                        <p>Valor: R${produto.value}</p>
-                        <p>ID: R${produto.id}</p>
-                        <p>Stock: {produto.stock}</p>
-                        <p>Stock: {produto.reference}</p>
+                <div key={produto.id} className="product-card grid grid-cols-2 gap-2">
+                    <div>
+                        <img src={produto.urlImage} alt={produto.description} className="h-auto max-w-full rounded-lg " />
+                        <div className="card__infos">
+                                <p>ID: {produto.id}</p>
+                                <h2>Descrição: {produto.description}</h2>
+                                <p>Valor: R$ {produto.value}</p>
+                                <p>Estoque: {produto.stock}</p>
+                                <p>Referencia: {produto.reference}</p>
+                        </div>
                     </div>
-                </section>
+                </div>
             ))}
         </>
     );
