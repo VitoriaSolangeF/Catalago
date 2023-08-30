@@ -13,14 +13,14 @@ function ProductCard() {
 
                 <section key={produto.id} className="product-card">
                 
-                    <img src="fone.png" alt="fone" className="card__image" />
+                    <img src={produto.urlImage} alt="fone" className="card__image" />
 
                     <div className="card__infos">
-                        <h2 class="descricao">Descrição: {produto.description}</h2>
-                        <p class="valor">Valor: R${produto.value}</p>
-                        <p class="id">ID: R${produto.id}</p>
-                        <p class="stock1">Stock: {produto.stock}</p>
-                        <p class="stock2">Stock: {produto.reference}</p>
+                        <h2 class="descricao">{produto.description}</h2>
+                        <p class="valor">Atacado: R${produto.value}</p>
+                        <p class="id">ID:{produto.id}</p>
+                        <p class="stock">Estoque: {produto.stock}</p>
+                        <p class="cx_und">Cx: {produto.cx_und}</p>
                     </div>
                 </section>
             ))}

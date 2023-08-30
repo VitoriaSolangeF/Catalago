@@ -1,22 +1,20 @@
 .product-card {
     background-color: white;
     cursor: pointer;
+    border-color: #4e4444;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 20px;
 }
 
 .card__image {
-    width: 580px;
-    height: 430px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 .card__infos {
     padding: 20px;
-    border-top: 1px solid #ddd;
-}
-
-.card__price {
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 10px;
+    border-top: 1px solid #c2bfbf;
 }
 
 .card__title {
@@ -28,22 +26,24 @@
 }
 
 .descricao {
+    text-align: center;
+    font-size: 1em;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .valor {
+    text-align: center;
     font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .id {
     font-weight: bold;
 }
 
-.stock1 {
-    font-weight: bold;
-}
-
-.stock2 {
+.stock {
     font-weight: bold;
 }
 
@@ -51,4 +51,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
+    align-items: center;
 }

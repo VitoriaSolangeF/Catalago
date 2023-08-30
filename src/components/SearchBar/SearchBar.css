@@ -7,16 +7,18 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     gap: 13px;
     padding-right: 13px;
+    border-radius: 5px;
 }
 
 .search__input {
-    padding: 13px;
+    padding: 15px;
     flex-grow: 1;
     border: none;
     outline: none;
     font-size: 0.8rem;
     font-weight: 500px;
     border-right: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .search__button {
@@ -26,5 +28,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #3333;
 }

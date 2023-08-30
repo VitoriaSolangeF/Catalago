@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #e7e7e7;
+    background-color: #ffffff;
 }
 
 .conteúdo {
@@ -22,7 +22,3 @@ body {
   box-sizing: border-box; 
 }
 
-.card-container {
-  display: grid;
-  padding: 10em;
-}

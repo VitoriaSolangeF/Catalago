@@ -1,11 +1,10 @@
 import React from 'react';
-
 import './Img.css';
 
 function Img () {
   return (
     <header>
-      <img src="logo.png" alt="Logo Kimaster" />
+      <img src="kimaster.png" alt="Logo Kimaster" />
     </header>
   );
 }
