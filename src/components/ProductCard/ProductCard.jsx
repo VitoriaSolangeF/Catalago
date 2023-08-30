@@ -10,18 +10,19 @@ function ProductCard() {
     return (
         <div className="container">
             {produtos.map(produto => (
-                <div key={produto.id} className="product-card">
-                    <div>
-                        <img src={produto.urlImage} alt={produto.description} className="card__image" />
-                        <div className="card__infos">
-                                <p>ID: {produto.id}</p>
-                                <h2>Descrição: {produto.description}</h2>
-                                <p>Valor: R$ {produto.value}</p>
-                                <p>Estoque: {produto.stock}</p>
-                                <p>Referencia: {produto.reference}</p>
-                        </div>
+
+                <section key={produto.id} className="product-card">
+                
+                    <img src="fone.png" alt="fone" className="card__image" />
+
+                    <div className="card__infos">
+                        <h2 class="descricao">Descrição: {produto.description}</h2>
+                        <p class="valor">Valor: R${produto.value}</p>
+                        <p class="id">ID: R${produto.id}</p>
+                        <p class="stock1">Stock: {produto.stock}</p>
+                        <p class="stock2">Stock: {produto.reference}</p>
                     </div>
-                </div>
+                </section>
             ))}
         </div>
     );

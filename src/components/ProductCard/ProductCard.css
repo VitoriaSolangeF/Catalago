@@ -27,12 +27,28 @@
     font-weight: 500px;
 }
 
+.descricao {
+    font-weight: bold;
+}
+
+.valor {
+    font-weight: bold;
+}
+
+.id {
+    font-weight: bold;
+}
+
+.stock1 {
+    font-weight: bold;
+}
+
+.stock2 {
+    font-weight: bold;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    align-items: center;
 }
-
-
-
