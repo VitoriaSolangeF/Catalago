@@ -14,7 +14,7 @@ function App() {
             <Banner />
 
           <div className="Banner2">
-            <Banner2 />
+            <Banner2 />.
           </div>
 
           <div className="Carregadores">

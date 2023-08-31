@@ -3,6 +3,7 @@ import SearchBar from "../SearchBar/SearchBar";
 
 import './Header.css';
 import CartButton from "../CartButton/CartButton";
+import Menu from "../Menu/Menu";
 
 
 
@@ -13,6 +14,7 @@ function Header() {
                 <img className="logo" src="logobranca.png" alt="logo__kimaster" />
                 <SearchBar />
                 <CartButton />
+                <Menu />
             </div>
         </header>
     );
