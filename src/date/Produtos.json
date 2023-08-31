@@ -59,7 +59,7 @@
         "cx_und": "100und",
         "value": 35.00,
         "stock": 500,
-        "description": "Turbo Typ-C"
+        "description": "Carregador Turbo Typ-C"
     },
 
     {
@@ -68,7 +68,7 @@
         "cx_und": "100und",
         "value": 35.00,
         "stock": 500,
-        "description": "Turbo Micro"
+        "description": "Carregador Turbo Micro"
     },
 
     {
@@ -77,7 +77,7 @@
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
-        "description": "Turbo Lightning/USB-C"
+        "description": "Carregador Turbo Lightning/USB-C"
     },
 
     {
@@ -86,7 +86,7 @@
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
-        "description": "Turbo Typ-C/Typ-C"
+        "description": "Carregador Turbo Typ-C/Typ-C"
     },
 
     {
@@ -95,7 +95,7 @@
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
-        "description": "Turbo Typ-C/Typ-C"
+        "description": "Carregador Turbo Typ-C/Typ-C"
     },
 
     {
@@ -104,7 +104,7 @@
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
-        "description": "Turbo Typ-C/Typ-C"
+        "description": "Carregador Turbo Typ-C/Typ-C"
     },
 
     {
@@ -159,5 +159,23 @@
         "value": 85.00,
         "stock": 500,
         "description": "Fone K9"
+    },
+
+    {
+        "urlImage": "https://cdnv2.moovin.com.br/technohaus/imagens/produtos/det/headphone-bluetooth-ajustavel-com-microfone-elite-k9-kimaster-preto-6395d0908b14d7948cb36cb99617f06c.jpg",
+        "id": "K9",
+        "cx_und": "100und",
+        "value": 85.00,
+        "stock": 500,
+        "description": "roteador"
+    },
+
+    {
+        "urlImage": "https://cdnv2.moovin.com.br/technohaus/imagens/produtos/det/headphone-bluetooth-ajustavel-com-microfone-elite-k9-kimaster-preto-6395d0908b14d7948cb36cb99617f06c.jpg",
+        "id": "K9",
+        "cx_und": "100und",
+        "value": 85.00,
+        "stock": 500,
+        "description": "tp-link"
     }
 ]
