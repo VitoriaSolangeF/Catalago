@@ -7,14 +7,14 @@ import Menu from "../Menu/Menu";
 
 
 
+
 function Header() {
     return (
         <header className="hearder">
             <div className="container_menu">
                 <img className="logo" src="logobranca.png" alt="logo__kimaster" />
                 <SearchBar />
-                <CartButton />
-                <Menu />
+                <Menu/>
             </div>
         </header>
     );
