@@ -1,55 +1,45 @@
-.product-card {
-    background-color: white;
-    cursor: pointer;
-    border-color: #4e4444;
-    border: 2px solid rgb(136, 136, 136);
-    border-radius: 20px;
-}
-
-.card__image {
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.card__infos {
-    padding: 20px;
-    border-top: 1px solid #c2bfbf;
-}
-
-.card__title {
-    font-size: 20px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    font-weight: 500px;
-}
-
-.descricao {
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.valor {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.id {
-    font-weight: bold;
-}
-
-.stock {
-    font-weight: bold;
-}
-
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     align-items: center;
+    margin: 1.5em;
+   
 }
+
+.product-card {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 8px;
+    transition: transform 100ms ease-in-out;
+    box-shadow: 5px 8px 5px #00000048;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.card_infos {
+    padding: 1em;
+    border-top: 1px solid #c2bfbf;
+}
+
+.container_card {
+    flex-direction: column;
+}
+
+.descricao {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valor {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.info {
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
