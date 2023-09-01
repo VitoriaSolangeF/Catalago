@@ -30,7 +30,8 @@ function Menu () {
         <div className="Menu">
             <div className='menu-container' ref={menuRef}>
                 <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
-                    <img src={menu}></img>
+                    <span>MENU</span>
+                    {/*<img src={menu}></img>*/}
                 </div>
 
                 <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
