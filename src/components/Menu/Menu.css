@@ -21,23 +21,27 @@ code {
 }
 
 .menu-trigger {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+  position: absolute;
+    top: 40px;
+    right: 70px;
+    width: 80px;
     overflow: hidden;
-    cursor: pointer;
     display: flex;
+    cursor: pointer;
+    background-color: white;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: #00b0c7;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .dropdown-menu {
     position: absolute;
-    top: 100px;
-    right: 20px;
+    top: 105px;
+    right: 50px;
     background-color: white;
     border-radius: var(border-radius);
     padding: 10px 20px;
