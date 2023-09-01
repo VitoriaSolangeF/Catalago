@@ -7,10 +7,13 @@ import Carregadores from "./components/Categorys/Categorys";
 import Banner2 from "./components/Banner2/Banner2";
 import { LoadProdutos } from './components/utils/loadProdutos'; 
 import whatapp from './assets/whatsapp.png'
+import ReactWhatsapp from 'react-whatsapp';
 
 function App() {
   const [busca, setBusca] = useState('');
   const produtos = LoadProdutos();
+  const [number, setNumber] = useState('(11) 969234702');
+  const [message, setMessage] = useState('Olá, mundo');
 
   useEffect(() => {
     const isPageReloaded = localStorage.getItem('isPageReloaded');
@@ -39,9 +42,11 @@ function App() {
 
           <div className="card-container">
             <ProductCard produtos={produtos} busca={busca}  />
-
-            <div className="content"> {/* Aplicar a classe dinamicamente */}
-              <img src={whatapp} alt="" />
+            
+            <div className="content"> 
+              <ReactWhatsapp number={number} message={message}>
+                  <img src={whatapp} alt="" />
+              </ReactWhatsapp>
             </div>
           </div>
       </div>
