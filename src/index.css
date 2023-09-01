@@ -14,16 +14,45 @@ body {
     background-color: #ffffff;
 }
 
-.conteúdo {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box; 
-}
-
 .card-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content {
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  bottom: 0 ;
+  padding: 1em;
+}
+
+.content.pulse-animation {
+  animation: pulse 1s 3;
+}
+
+.content img{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 100ms ease-in-out;
+}
+
+.content img:hover{
+  transform: scale(1.2);
+  margin-bottom: 15px;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
