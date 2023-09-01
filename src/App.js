@@ -12,6 +12,8 @@ import ReactWhatsapp from 'react-whatsapp';
 function App() {
   const [busca, setBusca] = useState('');
   const produtos = LoadProdutos();
+
+  // Para deixa Dynamic
   const [number, setNumber] = useState('(11) 969234702');
   const [message, setMessage] = useState('Olá, mundo');
 
@@ -44,7 +46,7 @@ function App() {
             <ProductCard produtos={produtos} busca={busca}  />
             
             <div className="content"> 
-              <ReactWhatsapp number={number} message={message}>
+              <ReactWhatsapp number="(11) 969234702" message="Olá mundo">
                   <img src={whatapp} alt="" />
               </ReactWhatsapp>
             </div>
