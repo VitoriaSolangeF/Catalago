@@ -37,7 +37,7 @@
 
     {
         "urlImage": "https://a-static.mlcdn.com.br/450x450/carregador-kimaster-kt608x-micro-v8-auto-id/bittacessorios/bdc0538ce8bc11ebb7b04201ac18500e/02492cb191bd850a865420d0a8ef1a1a.jpeg",
-        "id": "KT608X",
+        "id": "KT120",
         "cx_und": "100und",
         "value": 26.00,
         "stock": 500,
@@ -46,7 +46,7 @@
 
     {
         "urlImage": "https://cdn.awsli.com.br/600x450/1872/1872848/produto/91093193/16881bb69b.jpg",
-        "id": "KT605X",
+        "id": "KTlt0",
         "cx_und": "100und",
         "value": 26.00,
         "stock": 500,
@@ -55,7 +55,7 @@
     
     {
         "urlImage": "https://images-americanas.b2w.io/produtos/1618051774/imagens/kit-carregador-turbo-type-c-kimaster-kt639/1618051969_1_large.jpg",
-        "id": "KT639",
+        "id": "KT125",
         "cx_und": "100und",
         "value": 35.00,
         "stock": 500,
@@ -64,7 +64,7 @@
 
     {
         "urlImage": "https://cdn.avinformatica.com.br/media/catalog/product/cache/1/image/1540x1540/9df78eab33525d08d6e5fb8d27136e95/0/1/014653_1_1.jpg",
-        "id": "KT638",
+        "id": "KT625",
         "cx_und": "100und",
         "value": 35.00,
         "stock": 500,
@@ -72,8 +72,8 @@
     },
 
     {
-        "urlImage": "https://www.lojaskingcell.com.br/product_images/h/289/1624992122_KT652-emb__51015_std.jpg",
-        "id": "KT652",
+        "urlImage": "https://www.lojaskingcell.com.br/product_images/h/289/1624992122_20a52-emb__51015_std.jpg",
+        "id": "KT",
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
@@ -82,7 +82,7 @@
 
     {
         "urlImage": "https://cdn.awsli.com.br/600x450/2095/2095445/produto/223626427/ejp3uoy8-5crceijs0k.png",
-        "id": "KT652",
+        "id": "KT60",
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
@@ -91,7 +91,7 @@
 
     {
         "urlImage": "https://cdn.awsli.com.br/600x450/2095/2095445/produto/223626427/ejp3uoy8-5crceijs0k.png",
-        "id": "KT652",
+        "id": "KT620a",
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
@@ -100,7 +100,7 @@
 
     {
         "urlImage": "https://cdn.awsli.com.br/600x450/2095/2095445/produto/223626427/ejp3uoy8-5crceijs0k.png",
-        "id": "KT652",
+        "id": "KT6098",
         "cx_und": "100und",
         "value": 50.00,
         "stock": 500,
@@ -154,7 +154,7 @@
 
     {
         "urlImage": "https://cdnv2.moovin.com.br/technohaus/imagens/produtos/det/headphone-bluetooth-ajustavel-com-microfone-elite-k9-kimaster-preto-6395d0908b14d7948cb36cb99617f06c.jpg",
-        "id": "K9",
+        "id": "K59",
         "cx_und": "100und",
         "value": 85.00,
         "stock": 500,
@@ -163,7 +163,7 @@
 
     {
         "urlImage": "https://cdnv2.moovin.com.br/technohaus/imagens/produtos/det/headphone-bluetooth-ajustavel-com-microfone-elite-k9-kimaster-preto-6395d0908b14d7948cb36cb99617f06c.jpg",
-        "id": "K9",
+        "id": "K19",
         "cx_und": "100und",
         "value": 85.00,
         "stock": 500,
@@ -172,7 +172,7 @@
 
     {
         "urlImage": "https://cdnv2.moovin.com.br/technohaus/imagens/produtos/det/headphone-bluetooth-ajustavel-com-microfone-elite-k9-kimaster-preto-6395d0908b14d7948cb36cb99617f06c.jpg",
-        "id": "K9",
+        "id": "K29",
         "cx_und": "100und",
         "value": 85.00,
         "stock": 500,

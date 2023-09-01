@@ -18,3 +18,23 @@
     width: 250px;
     height: 50px;
 }
+
+.search {
+    display: flex;
+    position: relative;
+}
+
+.input_search #default-search {
+    width: 40em;
+    color: #000;
+    font-weight: bold;
+    padding-left: 3em;
+
+}
+
+.input_search .icon-search{
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    padding: 0.7em;
+}

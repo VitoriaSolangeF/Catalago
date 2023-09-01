@@ -22,3 +22,8 @@ body {
   box-sizing: border-box; 
 }
 
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
