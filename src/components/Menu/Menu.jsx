@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
+
+// Imagens
+import carregando from '../../assets/carregando.png';
+import fone from '../../assets/fone-de-ouvido.png';
+import cabo from '../../assets/plug-usb.png'; 
+
+// Styles
 import './Menu.css';
-import menu from '../img/menu.png';
-import carregando from '../img/carregando.png';
-import fone from '../img/fone-de-ouvido.png';
-import cabo from '../img/plug-usb.png';
 
 function Menu () {
     const [open, setOpen] = useState(false);
@@ -31,7 +34,6 @@ function Menu () {
             <div className='menu-container' ref={menuRef}>
                 <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
                     <span>MENU</span>
-                    {/*<img src={menu}></img>*/}
                 </div>
 
                 <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>

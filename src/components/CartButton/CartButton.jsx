@@ -1,14 +1,16 @@
 import React from "react";
 import { MdOutlineWhatsapp } from 'react-icons/md';
+import ReactWhatsapp from 'react-whatsapp';
 
 import './CartButton.css';
 
 function CartButton() {
     return (
-        <button type="button" className="cart__button">
-            < MdOutlineWhatsapp />
-            <span className="cart-status"></span>
-        </button>
+        <div className="whatapp_icon">
+            <ReactWhatsapp number="(11) 969234702" message="Olá mundo">
+                < MdOutlineWhatsapp />
+            </ReactWhatsapp>
+        </div>
     );
 }
 
