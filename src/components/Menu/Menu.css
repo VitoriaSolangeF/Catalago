@@ -21,7 +21,7 @@ code {
 }
 
 .menu-trigger {
-  position: absolute;
+    position: absolute;
     top: 40px;
     right: 70px;
     width: 80px;
@@ -125,4 +125,11 @@ h3 span{
     max-width: 100px;
     margin-left: 10px;
     transition: var(--speed);
+}
+
+@media (max-width: 900px) {
+  .menu-trigger {
+    right: 10px;
+    width: 60px;
+  }
 }

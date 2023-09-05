@@ -24,7 +24,7 @@
     position: relative;
 }
 
-.input_search #default-search {
+#default-search {
     width: 40em;
     color: #000;
     font-weight: bold;
@@ -37,4 +37,15 @@
     color: #000;
     position: absolute;
     padding: 0.7em;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        width: 150px;
+        height: 25px;
+    }
+    #default-search {
+        width: 10em;
+    }
+    
 }
