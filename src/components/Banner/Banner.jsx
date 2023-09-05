@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { register } from 'swiper/element/bundle'
 import Image1 from './../../assets/a4.png'
-import Image2 from './../../assets/a1.jpg'
+import Image2 from './../../assets/a3.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
