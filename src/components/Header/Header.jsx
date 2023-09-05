@@ -14,7 +14,7 @@ function Header({valor, onChange}) {
                             <input
                                 type="search"
                                 id="default-search"
-                                className="p-4 pl-10 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="p-4 pl-2 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Pesquisar produtos..."
                                 value={valor}
                                 onChange={onChange}
@@ -25,8 +25,10 @@ function Header({valor, onChange}) {
                         </div>
     
                 </div>
-                <Menu/> 
-                <CartButton />
+                <div className="container_button">
+                    <CartButton />
+                    <Menu/>
+                </div>
             </div>
         </header>
     );

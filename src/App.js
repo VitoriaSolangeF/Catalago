@@ -1,34 +1,62 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ReactWhatsapp from 'react-whatsapp';
 
+// Componetes
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import ProductCard from "./components/ProductCard/ProductCard";
-import Carregadores from "./components/Categorys/Categorys";
 import { LoadProdutos } from './components/utils/loadProdutos'; 
 
-function App() {
+// Imagens
+import whatapp from './assets/whatsapp.png'
 
+function App() {
   const [busca, setBusca] = useState('');
   const produtos = LoadProdutos();
 
-  console.log(busca)
+  // Para deixa Dynamic
+  const [number, setNumber] = useState('(11) 969234702');
+  const [message, setMessage] = useState('Olá, mundo');
+
+  useEffect(() => {
+    const isPageReloaded = localStorage.getItem('isPageReloaded');
+    if (!isPageReloaded) {
+      localStorage.setItem('isPageReloaded', 'true');
+    } else {
+      localStorage.removeItem('isPageReloaded');
+      document.querySelector('.content').classList.add('pulse-animation');
+      document.querySelector('.card-container').classList.add('pulse-animation');
+    }
+  }, []);
 
   return (
     <div className='app'>
         <Header value={busca} onChange={(e) => setBusca(e.target.value)} />
-          <div className="Banner">
-            <Banner />
 
-          <div className="Carregadores">
-            <Carregadores produtos={produtos} busca={busca}/>.
-          </div>
+        <Banner/>
 
+        <div className="Carregadores">
+          <h1>Carregadores</h1>
+        </div>
+
+        <div className="card-container">
+          <ProductCard produtos={produtos} busca={busca}  />
+          
+          <div className="content"> 
+            <ReactWhatsapp number="(11) 969234702" message="Olá mundo">
+                <img src={whatapp} alt="" />
+            </ReactWhatsapp>
           </div>
-          <div className="card-container">
-            <ProductCard produtos={produtos} busca={busca}  />
-          </div>
+        </div>
+
       </div>
   );
 }
 
 export default App;
+
+
+
+
+
+

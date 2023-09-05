@@ -1,21 +1,12 @@
-.cart__button {
+.whatapp_icon {
     font-size: 2.5rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    border: none;
-    background: none;
     cursor: pointer;
-    position: relative;
-    margin-left: 20px;
     color: white;
 }
 
-@media (max-width: 900px) {
-    .cart__button {
-        font-size: 2.5rem;
-        right: 40px;
-        width: 80px;
+@media (max-width: 1124px) {
+    .whatapp_icon {
+        font-size: 2.2rem;
     }
-}
+  }
