@@ -1,9 +1,12 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 
 import './ProductCard.css'
 import { LoadProdutos } from "../utils/loadProdutos";
+import Modal  from "./../Car/Modal";
 
 function ProductCard({ produtos, busca }) {
+
+    const [openModal, setOpenModal] = useState(false)
 
     const produtsFiltradas = useMemo(() => {
         return produtos.filter((produto) =>
@@ -27,12 +30,26 @@ function ProductCard({ produtos, busca }) {
                                     <span className="info">ID:{produto.id}</span>
                                     <span className="info">Estoque: 10</span>
                                     <span className="info">Cx: {produto.cx_und}</span>
-                                    <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">WhatApp</a>
+                                    <button onClick={() => setOpenModal(true)} href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">WhatApp</button>
                                 </div>
-
                             </div>
                         </div>
                     ))}
+                    <Modal isOpen={openModal} setOpenModal={() => setOpenModal(!openModal)}>
+                        <div className="header_modal ">
+                            <h1>Adicionar ao Carrinho</h1>
+                            <button onClick={() => setOpenModal(!openModal)}><ion-icon name="close-outline"></ion-icon></button>
+                        </div>
+                        <div className="produto_modal info">
+                            <img src="https://png.pngitem.com/pimgs/s/134-1341378_apple-watch-series-4-hd-png-download.png" alt="produto" />
+                            <p>Carregador Type c</p>
+                        </div>
+                        <div className="formulario_modal">
+                            <form action="#">
+                                <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="number" name="Quantidade de Produto" max={20} min={0}/>
+                            </form>
+                        </div>
+                    </Modal>
                 </div>
 
     );
