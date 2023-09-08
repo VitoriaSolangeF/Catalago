@@ -9,6 +9,7 @@ import { LoadProdutos } from './components/utils/loadProdutos';
 
 // Imagens
 import whatapp from './assets/whatsapp.png'
+import Compra from "./components/FinalizarCompra/Compra";
 
 function App() {
   const [busca, setBusca] = useState('');
@@ -32,14 +33,12 @@ function App() {
   return (
     <div className='app'>
         <Header value={busca} onChange={(e) => setBusca(e.target.value)} />
-
         <Banner/>
-
         <div className="Carregadores">
           <h1>Carregadores</h1>
         </div>
 
-        <div className="card-container">
+        <div className="card_container">
           <ProductCard produtos={produtos} busca={busca}  />
           
           <div className="content"> 
@@ -48,7 +47,7 @@ function App() {
             </ReactWhatsapp>
           </div>
         </div>
-
+        <Compra/>
       </div>
   );
 }

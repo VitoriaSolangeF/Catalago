@@ -1,0 +1,8 @@
+.container_Rodape {
+    background-color: #00b0c7;
+    position: fixed;
+    width: 100vh;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}

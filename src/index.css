@@ -14,7 +14,7 @@ body {
     background-color: #efefef;
 }
 
-.card-container {
+.card_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +63,13 @@ body {
   display: flex;
   justify-content: center;
   padding: 8px;
+}
+
+.container_compra {
+  position: fixed;
+  display: flex;
+  z-index: 5020;
+  width: 100%;
 }
 
 @keyframes pulse {

@@ -2,11 +2,22 @@ import React, { useMemo, useState } from "react";
 
 import './ProductCard.css'
 import { LoadProdutos } from "../utils/loadProdutos";
-import Modal  from "./../Car/Modal";
+import Car from "../Car/Car";
+
 
 function ProductCard({ produtos, busca }) {
+    const [carrinho, setCarrinho] = useState([]);
+    const [iconCarrinho, setIconCarrinho] = useState(false);
 
-    const [openModal, setOpenModal] = useState(false)
+    const addToCart = (produto) => {
+        if (!carrinho.includes(produto)) {
+            setCarrinho([...carrinho, produto]);
+        } else {
+            const carrinhoAtualizado = carrinho.filter((item) => item !== produto);
+            setCarrinho(carrinhoAtualizado)
+        }
+        console.log(carrinho)
+    }
 
     const produtsFiltradas = useMemo(() => {
         return produtos.filter((produto) =>
@@ -14,10 +25,9 @@ function ProductCard({ produtos, busca }) {
     }, [produtos, busca]);
     
     return (
-            
                 <div className="container">
                     {produtsFiltradas.map((produto) => (
-                        <div key={produto.id} className="product-card w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div key={produto.id} className="product_card">
                             <a href="#">
                                 <img className="p-8 rounded-t-lg" src="https://png.pngitem.com/pimgs/s/134-1341378_apple-watch-series-4-hd-png-download.png"/>
                             </a>
@@ -30,26 +40,30 @@ function ProductCard({ produtos, busca }) {
                                     <span className="info">ID:{produto.id}</span>
                                     <span className="info">Estoque: 10</span>
                                     <span className="info">Cx: {produto.cx_und}</span>
-                                    <button onClick={() => setOpenModal(true)} href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">WhatApp</button>
+                                    <Car 
+                                        addCard={carrinho.includes(produto)} 
+                                        produto={produto}
+                                        setIconCarrinho={setIconCarrinho}
+                                        carrinho={carrinho}
+                                        setCarrinho={setCarrinho}
+                                    /> 
+                                    <button 
+                                        onClick={() => addToCart(produto)} 
+                                        href="#" 
+                                        id={`${carrinho.includes(produto) ? 'button_car' : null}`}
+                                        className="button_car bg-blue-700 text-white hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <span className="icon_car">
+                                            <ion-icon name={carrinho.includes(produto) ? "checkmark-outline" : "cart-outline"}></ion-icon>
+                                            {carrinho.includes(produto) ? "Remover do Carrinho" : "Add Carrinho"}
+                                            </span>
+                                    </button>
                                 </div>
                             </div>
+                            
                         </div>
+                        
                     ))}
-                    <Modal isOpen={openModal} setOpenModal={() => setOpenModal(!openModal)}>
-                        <div className="header_modal ">
-                            <h1>Adicionar ao Carrinho</h1>
-                            <button onClick={() => setOpenModal(!openModal)}><ion-icon name="close-outline"></ion-icon></button>
-                        </div>
-                        <div className="produto_modal info">
-                            <img src="https://png.pngitem.com/pimgs/s/134-1341378_apple-watch-series-4-hd-png-download.png" alt="produto" />
-                            <p>Carregador Type c</p>
-                        </div>
-                        <div className="formulario_modal">
-                            <form action="#">
-                                <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="number" name="Quantidade de Produto" max={20} min={0}/>
-                            </form>
-                        </div>
-                    </Modal>
+                    
                 </div>
 
     );

@@ -1,0 +1,24 @@
+.car {
+    display: flex;
+    align-items: center;
+}
+
+#title_car {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #cecece;
+    padding-top: 0.3em;
+}
+
+#title_car button ion-icon {
+    font-size: 1.2em;
+}
+
+#quantidade {
+    height: 34px;
+    width: 5.8em;
+    margin-bottom: 1em;
+    columns: #000;
+    font-weight: bold;
+}
