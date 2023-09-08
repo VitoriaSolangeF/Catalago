@@ -53,6 +53,11 @@
     padding: 0.7em;
 }
 
+.search input:focus + .icon-search ion-icon {
+    transform: rotate(90deg);
+    animation: spin 5s linear infinite;
+}
+
 @media (max-width: 1124px) {
     .logo {
         width: 155px;

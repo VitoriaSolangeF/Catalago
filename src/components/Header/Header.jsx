@@ -3,7 +3,7 @@ import './Header.css';
 import CartButton from "../CartButton/CartButton";
 import Menu from "../Menu/Menu";
 
-function Header({valor, onChange}) {
+function Header({valor, onChange,}) {
 
     return (
         <header className="hearder">
@@ -11,6 +11,7 @@ function Header({valor, onChange}) {
                 <img className="logo" src="logobranca.png" alt="logo__kimaster" />
                 <div className="input_search">
                         <div className="search">
+                        
                             <input
                                 type="search"
                                 id="default-search"
@@ -20,8 +21,9 @@ function Header({valor, onChange}) {
                                 onChange={onChange}
                             />
                             <div className="icon-search">
-                                <ion-icon name="search-outline"></ion-icon>
+                                <ion-icon className="ion-icon"name="search-outline"></ion-icon>
                             </div>
+                            
                         </div>
     
                 </div>
