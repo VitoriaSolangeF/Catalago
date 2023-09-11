@@ -26,7 +26,7 @@ function App() {
     } else {
       localStorage.removeItem('isPageReloaded');
       document.querySelector('.content').classList.add('pulse-animation');
-      document.querySelector('.card-container').classList.add('pulse-animation');
+      document.querySelector('.card_container').classList.add('pulse-animation');
     }
   }, []);
 
