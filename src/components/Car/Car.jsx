@@ -1,14 +1,21 @@
 import { useState } from 'react'
 import './Car.css'
+import { LoadProdutos } from '../utils/loadProdutos';
 
-const Car = ({ addCard }) => {
+const Car = ({ addCard, produto, handleResultado }) => {
 
     const [quantidade, setQuantidade] = useState();
+    const produtos = LoadProdutos();
 
     const handleQuantidade = (e) => {
         setQuantidade(e.target.value);
-        console.log(e.target.value);
+
+        const quantidadeFinal = produto - e.target.value
+
+        handleResultado(quantidadeFinal)
+        console.log(quantidadeFinal);
     }
+
 
     if(!addCard) {
         return(
@@ -19,7 +26,7 @@ const Car = ({ addCard }) => {
                 <input 
                     onChange={handleQuantidade} 
                     value={quantidade} 
-                    max={20} 
+                    max={produto} 
                     min={0} 
                     type="number" 
                     id="quantidade" 
