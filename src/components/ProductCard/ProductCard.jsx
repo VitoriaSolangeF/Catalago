@@ -50,7 +50,9 @@ function ProductCard({ produtos, busca }) {
                                 <span className="info">Cx: {produto.cx_und}</span>
                                 <Car 
                                     addCard={carrinho.includes(produto)}
-                                    produto={produto.stock}
+                                    produtoStock={produto.stock}
+                                    produtoId={produto.id}
+                                    produto={produto}
                                     handleResultado = {updateResultado} 
                                 /> 
                                 <button 
