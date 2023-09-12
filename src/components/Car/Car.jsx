@@ -1,42 +1,29 @@
 import { useState } from 'react'
 import './Car.css'
-import { LoadProdutos } from '../utils/loadProdutos';
 
-const Car = ({ addCard, produtoStock, produto, produtoId, handleResultado }) => {
+const Car = ({ addCard, produtoStock, produto, produtoId, quantidade, handleQuantidade }) => {
+    const [novaQuantidade, setNovaQuantidade] = useState(quantidade);
 
-    const [quantidade, setQuantidade] = useState();
+    const handleQuantidadeChange = (e) => {
+        const novaQuantidade = parseInt(e.target.value);
+        setNovaQuantidade(novaQuantidade);
+        handleQuantidade(produtoId, novaQuantidade);
+    };
 
-    const handleQuantidade = (e, id) => {
-        const { name, value } = e.target
-        setQuantidade(e.target.value);
-
-        const quantidadeFinal = produtoStock - e.target.value
-
-        if (produtoId === id) {
-            if (name === 'quantidade' && !isNaN(value)) {
-                const newValue = produtoStock + parseInt(value);
-                handleResultado(quantidadeFinal)
-                return { ...produto, [name]: newValue }
-            } else {
-                return { ...produto, [name]: value }
-            }
-        }
-        return produto
-        // handleResultado(quantidadeFinal)
-        // console.log(quantidadeFinal);
-    }
-
-    console.log(quantidade)
+    const estoqueDisponivel = isNaN(novaQuantidade) ? produtoStock : produtoStock - novaQuantidade;
 
     if (!addCard) {
         return (
             <>
+                <div>
+                    <span className="info">Estoque: {estoqueDisponivel}</span>
+                </div>
                 <div id='title_car'>
                     <label htmlFor="visitors" className="descricao descricaoCar block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantidade:</label>
                 </div>
                 <input
-                    onChange={(e) => handleQuantidade(e, produtoId)}
-                    value={quantidade}
+                    onChange={handleQuantidadeChange}
+                    value={novaQuantidade}
                     max={produtoStock}
                     min={0}
                     type="number"
@@ -45,9 +32,10 @@ const Car = ({ addCard, produtoStock, produto, produtoId, handleResultado }) => 
                     placeholder=""
                     required
                 />
+
             </>
-        )
+        );
     }
 }
 
-export default Car
+export default Car;
