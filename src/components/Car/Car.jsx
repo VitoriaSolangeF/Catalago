@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Car.css'
 
-const Car = ({ addCard, produtoStock, produto, produtoId, quantidade, handleQuantidade }) => {
+const Car = ({ addCard, produtoStock, produtoValor, produtoId, quantidade, handleQuantidade }) => {
     const [novaQuantidade, setNovaQuantidade] = useState(quantidade);
 
     const handleQuantidadeChange = (e) => {
@@ -11,13 +11,14 @@ const Car = ({ addCard, produtoStock, produto, produtoId, quantidade, handleQuan
     };
 
     const estoqueDisponivel = isNaN(novaQuantidade) ? produtoStock : produtoStock - novaQuantidade;
+    const valorFinal = isNaN(novaQuantidade) ? produtoValor : produtoValor * novaQuantidade;
 
     if (!addCard) {
         return (
             <>
-                <div>
-                    <span className="info">Estoque: {estoqueDisponivel}</span>
-                </div>
+
+                <span className="info">Estoque: {estoqueDisponivel}</span>
+
                 <div id='title_car'>
                     <label htmlFor="visitors" className="descricao descricaoCar block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantidade:</label>
                 </div>
@@ -32,6 +33,7 @@ const Car = ({ addCard, produtoStock, produto, produtoId, quantidade, handleQuan
                     placeholder=""
                     required
                 />
+                <span className="info">ValorFinal R$: {valorFinal}</span>
 
             </>
         );

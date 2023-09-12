@@ -51,13 +51,12 @@ function ProductCard({ produtos, busca }) {
                         <div className="container_card flex">
                             <span className="valor">R${produto.value}</span>
                             <span className="info">ID:{produto.id}</span>
-                            
                             <span className="info">Cx: {produto.cx_und}</span>
                             <Car
                                 addCard={carrinho.includes(produto)}
                                 produtoStock={produto.stock}
                                 produtoId={produto.id}
-                                produto={produto}
+                                produtoValor={produto.value}
                                 quantidade={quantidades[produto.id] || 0}
                                 handleQuantidade={updateQuantidade}
                             />
