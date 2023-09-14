@@ -11,7 +11,7 @@ function CartButton() {
                 < MdOutlineWhatsapp />
             </ReactWhatsapp>
         </div>
-    );
+    )
 }
 
 export default CartButton;

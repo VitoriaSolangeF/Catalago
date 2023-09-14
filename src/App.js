@@ -41,7 +41,7 @@ function App() {
 
         <div className="card-container">
           <ProductCard produtos={produtos} busca={busca}  />
-          
+        
           <div className="content"> 
             <ReactWhatsapp number="(11) 969234702" message="Olá mundo">
                 <img src={whatapp} alt="" />
