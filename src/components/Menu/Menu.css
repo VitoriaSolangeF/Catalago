@@ -32,13 +32,12 @@ code {
 
 .dropdown-menu {
   position: absolute;
-  top: 85px;
-  right: 50px;
+  top: 95px;
+  right: 10px;
   background-color: white;
   border-radius: var(border-radius);
   padding: 10px 20px;
   width: 200px;
-  left: 0;
   z-index: 10;
 }
 
@@ -46,7 +45,7 @@ code {
   content: '';
   position: absolute;
   top: -5px;
-  right: 20px;
+  right: 80px;
   height: 20px;
   width: 20px;
   background-color: white;
